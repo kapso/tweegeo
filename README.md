@@ -31,7 +31,7 @@ Start the process to stream tweets (fire up a separate shell for this):
 
 ### Testing
     
-    $ rake spec:models && rake spec:requests
+    $ rake spec
 
 ### Deployment
 
