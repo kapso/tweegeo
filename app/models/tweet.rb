@@ -33,7 +33,7 @@ class Tweet
     end
 
     ##
-    # Create a tweet in the collection from standard twitter status
+    # Create a tweet in the collection from standard twitter JSON response status
     # See - https://dev.twitter.com/docs/api/1/get/statuses/show/%3Aid
     #
     def create_from_status! (status)
