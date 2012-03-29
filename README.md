@@ -24,7 +24,7 @@ App Setup:
     $ rake db:drop && rake db:create && rake db:create_indexes && rake db:seed
     $ rails s
 
-Start the process to Stream Tweets (fire up a separate shell for this):
+Start the process to stream tweets (fire up a separate shell for this):
 
     $ export TWITTER_PWD=xxxxxx
     $ rake app:fetch_tweets
