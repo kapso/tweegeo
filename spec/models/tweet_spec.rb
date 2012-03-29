@@ -66,4 +66,12 @@ describe Tweet do
 
   end
 
+  describe "#latest_by_location" do
+
+    it 'returns tweets based on geo-cordinates' do
+      Tweet.latest_by_location(-77.423456, 42.989259).first.should be_an_instance_of Tweet
+    end
+
+  end
+
 end

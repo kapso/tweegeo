@@ -29,6 +29,10 @@ Startup the process to Stream Tweets (fire up a separate shell for this):
     $ export TWITTER_PWD=xxxxxx
     $ rake app:fetch_tweets
 
+### Testing
+    
+    $ rake spec:models && rake spec:requests
+
 ### Deployment
 
 The application is Heroku enabled. See `Procfile` and `config/mongoid.yml` for details.
