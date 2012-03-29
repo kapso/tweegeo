@@ -14,10 +14,8 @@ Installing/Starting MongoDB:
     $ sudo chown `id -u` /data/db
     $ mongod &
 
-Ruby VM and App Setup:
+App Setup:
 
-    $ rvm install 1.9.2
-    $ rvm use 1.9.2
     $ git clone git@github.com:kapso/tweegeo.git
     $ cd tweegeo
     $ rvm gemset create tweegeo
@@ -33,4 +31,4 @@ Startup the process to Stream Tweets (fire up a separate shell for this):
 
 ### Deployment
 
-The application is Heroku enabled. See `Procfile` for details.
+The application is Heroku enabled. See `Procfile` and `config/mongoid.yml` for details.
