@@ -4,9 +4,7 @@ This is the Tweegeo application. Here's what it does -
 
 Uses the Twitter Streaming API (https://dev.twitter.com/docs/streaming-api) to get location tagged tweets between NYC and SFO and saves the tweets to MongoDB. These tweets are then displayed on the client based on location input by the user.
 
-## Setup ##
-
-Get started:
+### Setup
 
 Installing/Starting MongoDB:
 
@@ -33,6 +31,6 @@ Startup the process to Stream Tweets (fire up a separate shell for this):
     $ export TWITTER_PWD=xxxxxx
     $ rake app:fetch_tweets
 
-## Deployment
+### Deployment
 
 The application is Heroku enabled. See `Procfile` for details.
