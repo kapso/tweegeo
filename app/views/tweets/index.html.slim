@@ -1,0 +1,33 @@
+h3 Latest Geo Tweets
+
+div &nbsp;
+
+.row
+  .span4
+    = form_tag :geo_tweets, method: :post, class: 'well form-inline' do
+      input.input-small id="geolong" type="text" value="-77.423456"
+      = nbsp 1
+      input.input-small id="geolat" type="text" value="42.989259"
+      = nbsp 2
+      button.btn type="submit" id="go-button" Go
+
+    p
+      h3 = "<small>Tweet Count</small> #{Tweet.count}".html_safe
+
+  .span8
+    .well
+      p
+        .pjax
+          table.table
+            - @tweets.each do |t|
+              .tweet
+                .row
+                  .span1 = image_tag(t.user_avatar_url)
+                  .span6
+                    div 
+                      strong = t.user_handle
+                    p = t.text
+                    p
+                      em = "#{time_ago_in_words(t.time)} ago" 
+                    span.label.label-info = t.place_name
+              hr

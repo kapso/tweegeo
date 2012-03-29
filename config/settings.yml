@@ -1,0 +1,3 @@
+twitter:
+  user: kapso
+  password: <%= ENV['TWITTER_PWD'] %>
