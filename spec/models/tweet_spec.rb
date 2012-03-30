@@ -12,7 +12,7 @@ describe Tweet do
 
   context 'when validating tweet' do
 
-    context 'text presence' do
+    context 'text' do
       let(:tweet) do
         FactoryGirl.build(:tweet, text: nil)
       end
@@ -24,7 +24,7 @@ describe Tweet do
       end
     end
 
-    context 'user handle presence' do
+    context 'user handle' do
       let(:tweet) do
         FactoryGirl.build(:tweet, user_handle: nil)
       end
@@ -36,7 +36,7 @@ describe Tweet do
       end
     end
 
-    context 'location presence' do
+    context 'location' do
       let(:tweet) do
         FactoryGirl.build(:tweet, location: nil)
       end
