@@ -7,7 +7,7 @@ module Worker::TwitterStream
   TwitterPwd  = Settings.twitter.password
 
   # bounding box covers SFO <--> NYC
-  Query       = 'locations=-122.75,36.8,-121.75,37.8,-74,40,-73,41' 
+  Query       = 'locations=-122.75,36.8,-121.75,37.8,-74,40,-73,41'
 
   class << self
 
@@ -41,12 +41,12 @@ module Worker::TwitterStream
           log_stdout "Failed after #{retries} failed reconnects"
         end
     
-        trap 'TERM' do  
+        trap 'TERM' do
           stream.stop
           em_die_gracefully
         end
 
-        trap 'INT' do  
+        trap 'INT' do
           stream.stop
           em_die_gracefully
         end
