@@ -26,6 +26,7 @@ App Setup:
 
 Start the process to stream tweets (fire up a separate shell for this):
 
+    $ export TWITTER_USER=xxxxxx
     $ export TWITTER_PWD=xxxxxx
     $ rake app:fetch_tweets
 
